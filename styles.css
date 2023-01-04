@@ -89,7 +89,9 @@ yt-icon.style-scope.ytd-menu-renderer {
 ytd-mini-guide-renderer,
 #related,
 tp-yt-app-drawer,
-.ytd-masthead #buttons,
+ytd-icon-button#button.style-scope.ytd-topbar-menu-button-renderer.style-default,
+button#button.style-scope.yt-icon-button,
+/* .ytd-masthead #buttons, */
 #guide-button,
 [class="style-scope ytd-comments"] {
   display: none !important;
