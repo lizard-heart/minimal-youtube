@@ -44,7 +44,7 @@ tp-yt-app-header#header.style-scope.ytd-c4-tabbed-header-renderer {
   --yt-spec-themed-overlay-background: rgba(218, 21, 21, 0.8);
 }
 
-/* TITLE OF VIDEO COLOR */
+/* COLOR OF TITLE OF VIDEO */
 h1.style-scope.ytd-watch-metadata {
   color: white
 }
@@ -52,6 +52,10 @@ h1.style-scope.ytd-watch-metadata {
 /* BIG SCRUBBER BAR */
 div.ytp-progress-bar-container {
   height: 8px;
+}
+
+div.ytp-scrubber-container {
+  top: -2.5px;
 }
 
 /* CHANGE COLOR SCRUBBER BAR */
@@ -67,31 +71,16 @@ div.ytp-hover-progress {
   font-weight: bolder;
 }
 
-div.ytp-scrubber-container {
-  top: -2.5px;
-}
-
 /* HIDE STUFF NO SEE */
-yt-icon.style-scope.ytd-badge-supported-renderer {
-  display: none;
-}
-
-yt-icon#logo-icon.style-scope.ytd-logo {
-  display: none
-}
-
-yt-icon.style-scope.ytd-menu-renderer {
-  display: none;
-}
-
+yt-icon.style-scope.ytd-badge-supported-renderer,
+yt-icon#logo-icon.style-scope.ytd-logo,
+yt-icon.style-scope.ytd-menu-renderer,
 #top-level-buttons-computed,
 #voice-search-button,
 ytd-mini-guide-renderer,
 #related,
 tp-yt-app-drawer,
-ytd-icon-button#button.style-scope.ytd-topbar-menu-button-renderer.style-default,
-button#button.style-scope.yt-icon-button,
-/* .ytd-masthead #buttons, */
+.ytd-masthead #buttons:not(#avatar-btn), 
 #guide-button,
 [class="style-scope ytd-comments"] {
   display: none !important;
