@@ -80,7 +80,10 @@ yt-icon.style-scope.ytd-menu-renderer,
 ytd-mini-guide-renderer,
 #related,
 tp-yt-app-drawer,
-.ytd-masthead #buttons:not(#avatar-btn), 
+yt-icon-button#icon-style-scope.ytd-notification-topbar-button-renderer,
+ytd-topbar-menu-button-renderer-style-scope.ytd-masthead.style-default,
+ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
+ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default,
 #guide-button,
 [class="style-scope ytd-comments"] {
   display: none !important;
