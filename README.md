@@ -28,3 +28,4 @@ Minimal YouTube is a boost for the <a href="https://arc.net/">Arc browser</a> th
 * Links to watch later and subscriptions on home page
 * Dracula color scheme
 * Redirect shorts to regular video player
+* Adds back YouTube profile icon
