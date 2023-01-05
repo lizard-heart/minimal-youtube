@@ -5,6 +5,11 @@ window.onload = function () {
   } else if (window.location.href.includes("shorts")) {
     // REDIRECT SHORTS TO NORMAL VIDEO
     window.location.href = window.location.href.replace("shorts/", "watch?v=");
+  } else if (window.location.href.includes("@")) {
+    // IF ON CHANNEL PAGE, ADD RSS FEED BUTTON
+    const rssElement = document.querySelector('[title="RSS"]')
+    const rssFeed = rssElement.getAttribute('href')
+    addLink(rssFeed);
   }
 };
 
@@ -33,4 +38,29 @@ const replaceHomePage = () => {
       window.location.href = `https://www.youtube.com/results?search_query=${inputValue}`
     }
   });
+}
+
+
+function createLink(url) {
+  const a = document.createElement('a');
+  a.style.color = '#f26522';
+  // a.style.margin = '0 0.5em';
+  a.style.textDecoration = 'underline';
+
+  const icon = document.createElement('span');
+  icon.innerHTML = "<img src='https://raw.githubusercontent.com/lizard-heart/lizard-heart/main/rss-icon.png' width='24' height='24'>";
+  icon.style.marginRight = '0.5em';
+
+
+  a.append(icon);
+  // a.append(name);
+
+  a.setAttribute('href', url);
+  a.setAttribute('target', '_blank');
+  return a;
+}
+
+function addLink(url) {
+  const link = createLink(url);
+  document.querySelector('#channel-header-container').appendChild(link);
 }
