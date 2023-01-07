@@ -21,6 +21,7 @@ Minimal YouTube is a boost for the <a href="https://arc.net/">Arc browser</a> th
 * Profit
 
 # New features in this fork
+* Hides recommendations when video ends
 * Adds RSS feed button to channel pages
 * Bigger subtitles
 * Bigger timestamp and chapter title

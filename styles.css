@@ -85,6 +85,7 @@ ytd-topbar-menu-button-renderer-style-scope.ytd-masthead.style-default,
 ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
 ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default,
 #guide-button,
+.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-show-tiles,
 [class="style-scope ytd-comments"] {
   display: none !important;
 }
